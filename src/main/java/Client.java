@@ -11,11 +11,6 @@ public String clientId;
         return name;
     }
 
-
-
-
-
-
     public static void addClient(String name, String surname, String email) throws SQLException {
 
         String sql = "INSERT INTO CLIENTS (NAME, SURNAME, EMAIL) VALUES(?,?,?)";

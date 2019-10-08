@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc393305-ae84-4937-bc31-699751c80e88" name="Default Changelist" comment="" />
+    <list default="true" id="dc393305-ae84-4937-bc31-699751c80e88" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FillTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FillTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FillTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FillTable.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +129,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

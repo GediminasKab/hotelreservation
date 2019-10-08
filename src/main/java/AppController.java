@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.net.URL;
 import java.sql.Connection;
@@ -42,7 +43,6 @@ public class AppController implements Initializable {
     private TableColumn<FillTable, String> tableSurnameCol;
     @FXML
     private TableColumn<FillTable, String> tableEmailCol;
-    ;
     @FXML
     private static TableView<Room> tableRoom;
     @FXML
@@ -111,6 +111,24 @@ public class AppController implements Initializable {
         }
 
         /*public void editUser() {
+        try{
+                int id = Integer.valueOf(jTextFieldID.getText());
+
+                if(client.removeClient(id))
+                 {
+                      JOptionPane.showMessageDialog(rootPane, "Client Deleted Successfully", "Remove Client", JOptionPane.INFORMATION_MESSAGE);
+                 }
+
+             else{
+
+                 JOptionPane.showMessageDialog(rootPane, "Client Not Deleted", "Remove Client Error", JOptionPane.ERROR_MESSAGE);
+                }
+
+            }
+            catch(NumberFormatException ex)
+            {
+                JOptionPane.showMessageDialog(rootPane, ex.getMessage() + " - Enter The Client Id (number)", "Client Id Error", JOptionPane.ERROR_MESSAGE);
+            }
             PreparedStatement st;
             String editQuery = "UPDATE `clients` SET `name`=?,`surname`=?,`email`=? WHERE `id`=?";
             String name = userName.getText();
@@ -152,6 +170,10 @@ public class AppController implements Initializable {
     }
 
     public void deleteUser(ActionEvent actionEvent) {
+    }
+    public void JTable1MouseClicked ( java.awt.event.MouseWheelEvent event) {
+        DefaultTableModel model = new DefaultTableModel();
+
     }
 }
 
