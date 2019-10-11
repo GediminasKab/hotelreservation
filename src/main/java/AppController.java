@@ -34,17 +34,17 @@ public class AppController implements Initializable {
     @FXML
     private TextField clientId;
     @FXML
-    private static TableView<FillTable> table;
+    private TableView<Client> table;
     @FXML
-    private static TableColumn<FillTable, String> tableClientId;
+    private TableColumn<Client, String> tableClientId;
     @FXML
-    private TableColumn<FillTable, String> tableNameCol;
+    private TableColumn<Client, String> tableNameCol;
     @FXML
-    private TableColumn<FillTable, String> tableSurnameCol;
+    private TableColumn<Client, String> tableSurnameCol;
     @FXML
-    private TableColumn<FillTable, String> tableEmailCol;
+    private TableColumn<Client, String> tableEmailCol;
     @FXML
-    private static TableView<Room> tableRoom;
+    private TableView<Room> tableRoom;
     @FXML
     private TableColumn<Room, String> tableRoomIdCol;
     @FXML
@@ -52,45 +52,38 @@ public class AppController implements Initializable {
     @FXML
     private TableColumn<Room, String> tableStatusCol;
     @FXML
-    private static TableView<Room> tableDate;
+    private TableView<Room> tableDate;
     @FXML
     private TableColumn<Client, Date> tableStartDateCol;
     @FXML
     private TableColumn<Client, String> tableEndingDateCol;
-    Client client = new Client();
 
-    ResultSet rs = null;
-
+Object JRootPane;
     public void initialize(URL url, ResourceBundle rb) {
-       ObservableList<FillTable> data = FXCollections.observableArrayList();
+        ObservableList<Client> data = FXCollections.observableArrayList();
         try (Connection conn = DBConnection.connect();
              Statement prep = conn.createStatement()) {
             ResultSet rs = prep.executeQuery("SELECT * FROM Clients");
             while (rs.next()) {
-                data.add(new FillTable(
+                data.add(new Client(
                         rs.getString("ClientId"),
                         rs.getString("Name"),
                         rs.getString("Surname"),
                         rs.getString("Email")
                 ));
             }
-            tableClientId.setCellValueFactory(new PropertyValueFactory<>("ClientID"));
-            tableNameCol.setCellValueFactory(new PropertyValueFactory<>("Name"));
-            tableSurnameCol.setCellValueFactory(new PropertyValueFactory<>("Surname"));
-            tableEmailCol.setCellValueFactory(new PropertyValueFactory<>("Email"));
+            tableClientId.setCellValueFactory(new PropertyValueFactory<>("clientId"));
+            tableNameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
+            tableSurnameCol.setCellValueFactory(new PropertyValueFactory<>("surname"));
+            tableEmailCol.setCellValueFactory(new PropertyValueFactory<>("email"));
             table.setItems(data);
-
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("error");
         }
-
     }
 
-    private Object JRootPane;
-
     public void saveUser() {
-
         String name = userName.getText().trim();
         String surname = userSurname.getText().trim();
         String email = userEmail.getText().trim();
@@ -107,9 +100,7 @@ public class AppController implements Initializable {
             userName.clear();
             userSurname.clear();
             userEmail.clear();
-
         }
-
         /*public void editUser() {
         try{
                 int id = Integer.valueOf(jTextFieldID.getText());
@@ -165,15 +156,12 @@ public class AppController implements Initializable {
                 Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
 */
     }
-
     public void editUser(ActionEvent actionEvent) {
     }
-
     public void deleteUser(ActionEvent actionEvent) {
     }
-    public void JTable1MouseClicked ( java.awt.event.MouseWheelEvent event) {
+    public void JTable1MouseClicked(java.awt.event.MouseWheelEvent event) {
         DefaultTableModel model = new DefaultTableModel();
-
     }
 }
 

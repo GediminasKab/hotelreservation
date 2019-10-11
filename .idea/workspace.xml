@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc393305-ae84-4937-bc31-699751c80e88" name="Default Changelist" comment="">
+    <list default="true" id="dc393305-ae84-4937-bc31-699751c80e88" name="Default Changelist" comment="message">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FillTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FillTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Hotel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Hotel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FillTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FillTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FillTable.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,6 +137,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="message" />
+    <option name="LAST_COMMIT_MESSAGE" value="message" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hotelreservation$Main.ic" NAME="Main Coverage Results" MODIFIED="1570487912758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

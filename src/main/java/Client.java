@@ -3,13 +3,50 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Client {
-    public String name ;
+    public String clientId;
+    public String name;
     public String surname;
     public String email;
-public String clientId;
+
+     Client(String clientId, String name, String surname, String email) {
+        this.clientId = clientId;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+    }
+
+    public String getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(String clientId) {
+        this.clientId = clientId;
+    }
+
     public String getName() {
         return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 
     public static void addClient(String name, String surname, String email) throws SQLException {
 
@@ -20,12 +57,7 @@ public String clientId;
         pstmt.setString(2, surname);
         pstmt.setString(3, email);
         pstmt.executeUpdate();
-
     }
-
-
-
-
 }
 
 

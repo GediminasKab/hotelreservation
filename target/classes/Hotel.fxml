@@ -35,7 +35,7 @@
                       <DatePicker fx:id="endDate" />
                         <TableView fx:id="table" prefHeight="126.0" prefWidth="652.0">
                             <columns>
-                        <TableColumn fx:id="tableClientId" prefWidth="83.0" text="ClientID" />
+                                  <TableColumn fx:id="tableClientId" prefWidth="83.0" text="ClientID" />
                                 <TableColumn fx:id="tableNameCol" prefWidth="83.0" text="Name" />
                                 <TableColumn fx:id="tableSurnameCol" prefWidth="90.0" text="Surname" />
                                 <TableColumn fx:id="tableEmailCol" minWidth="0.0" text="Email" />
